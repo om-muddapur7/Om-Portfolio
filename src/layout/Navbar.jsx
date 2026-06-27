@@ -87,7 +87,7 @@ const Navbar = () => {
 						))}
 
 						<div className="pt-2">
-							<Button className="w-full">Contact Me</Button>
+							<Button className="w-full" onClick={() => setIsMobileMenuOpen(false)}>Contact Me</Button>
 						</div>
 					</div>
 				</div>
