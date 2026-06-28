@@ -3,7 +3,6 @@ import { FaGithub, FaLinkedin, FaXTwitter } from "react-icons/fa6";
 import React from "react";
 import Button from "../components/Button";
 import AnimatedBorderButton from "../components/AnimatedBorderButton";
-import { Download } from "lucide-react";
 
 const Hero = () => {
 
