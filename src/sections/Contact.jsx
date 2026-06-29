@@ -65,7 +65,7 @@ export default function ContactSection() {
         </svg>
       ),
       label: "Location",
-      value: "Hubballi, Karnataka, India",
+      value: "India",
       href: null,
     },
     {

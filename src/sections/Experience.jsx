@@ -1,54 +1,48 @@
 export default function ExperienceSection() {
-  const experiences = [
-    {
-      role: "Senior Frontend Engineer",
-      company: "Acme Corp",
-      type: "Full-time",
-      period: "Jan 2023 — Present",
-      location: "Remote",
-      desc: "Leading the frontend architecture of a B2B SaaS platform serving 50k+ users. Migrated the codebase from CRA to Next.js 14, cutting page load times by 58%. Mentoring a team of 4 junior developers.",
-      highlights: ["Next.js migration cut LCP by 58%", "Built real-time collab features with CRDTs", "Introduced component design system used across 3 products"],
-      tech: ["Next.js", "TypeScript", "Zustand", "Tailwind", "Storybook"],
-      color: "#3b82f6",
-    },
-    {
-      role: "Full Stack Developer",
-      company: "Techify Studio",
-      type: "Full-time",
-      period: "Mar 2021 — Dec 2022",
-      location: "Bangalore, IN",
-      desc: "Designed and shipped end-to-end features for client projects across fintech and edtech verticals. Owned the Node.js microservices layer and PostgreSQL schema design.",
-      highlights: ["Delivered 12 client projects on time", "Reduced API response time by 40% via query optimization", "Introduced automated E2E testing with Playwright"],
-      tech: ["React", "Node.js", "PostgreSQL", "Docker", "Playwright"],
-      color: "#8b5cf6",
-    },
-    {
-      role: "Frontend Developer",
-      company: "Startup Hub",
-      type: "Contract",
-      period: "Jun 2020 — Feb 2021",
-      location: "Remote",
-      desc: "Built marketing sites and dashboards for early-stage startups. Focused on performance, accessibility, and rapid iteration with tight deadlines.",
-      highlights: ["Achieved 95+ Lighthouse scores across all projects", "Shipped 6 landing pages in 3 months", "Created reusable animation library with Framer Motion"],
-      tech: ["React", "Framer Motion", "GSAP", "Figma"],
-      color: "#06b6d4",
-    },
-    {
-      role: "Junior Developer Intern",
-      company: "WebWorks Agency",
-      type: "Internship",
-      period: "Jan 2020 — May 2020",
-      location: "Pune, IN",
-      desc: "Contributed to client websites and internal tooling. Learned production workflows, code review practices, and Git collaboration in a professional team environment.",
-      highlights: ["Contributed to 4 live client websites", "Learned agile sprint workflow", "Built internal time-tracking tool in Vue.js"],
-      tech: ["HTML/CSS", "JavaScript", "Vue.js", "Git"],
-      color: "#10b981",
-    },
-  ];
+	const experiences = [
+		// {
+		// 	role: "Senior Frontend Engineer",
+		// 	company: "Acme Corp",
+		// 	type: "Full-time",
+		// 	period: "Jan 2023 — Present",
+		// 	location: "Remote",
+		// 	desc: "Leading the frontend architecture of a B2B SaaS platform serving 50k+ users. Migrated the codebase from CRA to Next.js 14, cutting page load times by 58%. Mentoring a team of 4 junior developers.",
+		// 	highlights: [
+		// 		"Next.js migration cut LCP by 58%",
+		// 		"Built real-time collab features with CRDTs",
+		// 		"Introduced component design system used across 3 products",
+		// 	],
+		// 	tech: ["Next.js", "TypeScript", "Zustand", "Tailwind", "Storybook"],
+		// 	color: "#3b82f6",
+		// },
+		{
+			role: "Full Stack Development Intern",
+			company: "Sudeeksha Technologies",
+			type: "Virtual Internship",
+			period: "Sep 2024 — Feb 2025",
+			location: "Remote",
+			desc: "Contributed to the design and development of 'India's Heritage Tapestry', a MERN stack web application that connects and showcases 12+ temple communities. Participated in the complete software development lifecycle, from requirements gathering to testing and documentation.",
+			highlights: [
+				"Developed a full-stack MERN application for 12+ temple communities",
+				"Gathered requirements and prepared functional & technical documentation",
+				"Performed unit testing, integration testing, debugging, and feature enhancements",
+			],
+			tech: [
+				"React",
+				"Node.js",
+				"Express.js",
+				"MongoDB",
+				"JavaScript",
+				"REST APIs",
+				"Git",
+			],
+			color: "#3b82f6",
+		},
+	];
 
-  return (
-    <>
-      <style>{`
+	return (
+		<>
+			<style>{`
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Syne:wght@700;800&display=swap');
 
         @keyframes gradientShift {
@@ -270,44 +264,56 @@ export default function ExperienceSection() {
         }
       `}</style>
 
-      <section className="experience" id="experience">
-        <div className="experience-inner">
-          <div className="section-eyebrow">
-            <div className="eyebrow-line" />
-            <span className="eyebrow-text">Experience</span>
-          </div>
-          <h2 className="section-title">Where I've <span>worked</span></h2>
-          <p className="section-sub">My professional journey so far.</p>
+			<section className="experience" id="experience">
+				<div className="experience-inner">
+					<div className="section-eyebrow">
+						<div className="eyebrow-line" />
+						<span className="eyebrow-text">Experience</span>
+					</div>
+					<h2 className="section-title">
+						Where I've <span>worked</span>
+					</h2>
+					<p className="section-sub">My professional journey so far.</p>
 
-          <div className="timeline">
-            {experiences.map((exp) => (
-              <div className="timeline-item" key={exp.company + exp.role} style={{ "--accent": exp.color }}>
-                <div className="timeline-dot" />
-                <div className="timeline-card">
-                  <div className="card-header">
-                    <h3 className="card-role">{exp.role}</h3>
-                    <span className="card-period-badge">{exp.period}</span>
-                  </div>
-                  <div className="card-meta">
-                    <span className="card-company">{exp.company}</span>
-                    <span className="meta-dot" />
-                    <span className="card-type">{exp.type}</span>
-                    <span className="meta-dot" />
-                    <span className="card-location">{exp.location}</span>
-                  </div>
-                  <p className="card-desc">{exp.desc}</p>
-                  <ul className="card-highlights">
-                    {exp.highlights.map((h) => <li key={h}>{h}</li>)}
-                  </ul>
-                  <div className="card-tech">
-                    {exp.tech.map((t) => <span className="tech-badge" key={t}>{t}</span>)}
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-    </>
-  );
+					<div className="timeline">
+						{experiences.map((exp) => (
+							<div
+								className="timeline-item"
+								key={exp.company + exp.role}
+								style={{ "--accent": exp.color }}
+							>
+								<div className="timeline-dot" />
+								<div className="timeline-card">
+									<div className="card-header">
+										<h3 className="card-role">{exp.role}</h3>
+										<span className="card-period-badge">{exp.period}</span>
+									</div>
+									<div className="card-meta">
+										<span className="card-company">{exp.company}</span>
+										<span className="meta-dot" />
+										<span className="card-type">{exp.type}</span>
+										<span className="meta-dot" />
+										<span className="card-location">{exp.location}</span>
+									</div>
+									<p className="card-desc">{exp.desc}</p>
+									<ul className="card-highlights">
+										{exp.highlights.map((h) => (
+											<li key={h}>{h}</li>
+										))}
+									</ul>
+									<div className="card-tech">
+										{exp.tech.map((t) => (
+											<span className="tech-badge" key={t}>
+												{t}
+											</span>
+										))}
+									</div>
+								</div>
+							</div>
+						))}
+					</div>
+				</div>
+			</section>
+		</>
+	);
 }
