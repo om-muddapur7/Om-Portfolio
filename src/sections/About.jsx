@@ -36,6 +36,12 @@ import {
 	// Services
 	SiGoogle,
 	SiJsonwebtokens,
+	// Backend / Database
+	SiRedis,
+	SiDocker,
+	SiBun,
+	SiShadcnui,
+	SiUpstash,
 } from "react-icons/si";
 
 const techLogos = {
@@ -44,6 +50,13 @@ const techLogos = {
 	TypeScript: <SiTypescript className="text-blue-600" />,
 	React: <SiReact className="text-cyan-400" />,
 	"React Native": <SiReact className="text-cyan-400" />,
+	Redis: <SiRedis className="text-red-500" />,
+	Docker: <SiDocker className="text-blue-500" />,
+	"Bun.js": <SiBun />,
+	Bun: <SiBun />,
+	"shadcn/ui": <SiShadcnui />,
+	Upstash: <SiUpstash className="text-black dark:text-white" />,
+	"Upstash Redis": <SiUpstash className="text-black dark:text-white" />,
 	"Next.js": <SiNextdotjs />,
 	Firebase: <SiFirebase className="text-orange-400" />,
 	Supabase: <SiSupabase className="text-emerald-500" />,
@@ -110,9 +123,10 @@ export default function AboutSection() {
 				"TypeScript",
 				"React",
 				"Next.js",
+				"React Native",
 				"Tailwind CSS",
 				"Bootstrap",
-				"React Native"
+				"shadcn/ui",
 			],
 		},
 		{
@@ -124,15 +138,35 @@ export default function AboutSection() {
 				"REST APIs",
 				"JWT Authentication",
 				"Google OAuth",
+				"Redis",
 			],
 		},
 		{
-			category: "Database",
-			items: ["MongoDB", "PostgreSQL", "MySQL", "Firebase", "Supabase", "Prisma"],
+			category: "Database & ORM",
+			items: [
+				"MongoDB",
+				"PostgreSQL",
+				"MySQL",
+				"Firebase",
+				"Supabase",
+				"Prisma ORM",
+				"Neon PostgreSQL",
+				"Upstash Redis",
+			],
 		},
 		{
 			category: "Tools & Platforms",
-			items: ["Git", "GitHub", "Vercel", "Render", "Postman", "VS Code", "npm"],
+			items: [
+				"Git",
+				"GitHub",
+				"Docker",
+				"Postman",
+				"VS Code",
+				"Vercel",
+				"Render",
+				"npm",
+				"Bun",
+			],
 		},
 	];
 

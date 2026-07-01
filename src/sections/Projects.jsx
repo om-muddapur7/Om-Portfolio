@@ -90,6 +90,29 @@ export default function ProjectsSection() {
 			repo: "https://github.com/om-muddapur7/VSCode-clone",
 			featured: false,
 		},
+		{
+			tag: "Full Stack",
+			title: "Online Coding Platform",
+			desc: "A LeetCode-inspired online coding platform that allows users to write, compile, and execute C++, JavaScript, and Python code in real time. Built with a Redis-powered job queue, background workers, Prisma ORM, and PostgreSQL for asynchronous code execution and submission tracking.",
+			tech: [
+				"React",
+				"Bun.js",
+				"Node.js",
+				"Express.js",
+				"Redis",
+				"Upstash",
+				"Prisma ORM",
+				"PostgreSQL",
+				"Neon",
+				"Tailwind CSS",
+				"shadcn/ui",
+			],
+			color: "#2563eb",
+			link: "#",
+			repo: "https://github.com/om-muddapur7/Coding-platform",
+			featured: true,
+			preview: "/coding-platform.png",
+		},
 	];
 
 	// SVG card illustrations
