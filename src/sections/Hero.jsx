@@ -448,7 +448,7 @@ export default function HeroSection() {
                 Contact Me
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
               </a>
-              <a href="https://drive.google.com/file/d/1tJW39EsG65yLmHk_p1AthsWtRrsoUC7n/view?usp=sharing" target="_blank" className="btn-secondary">
+              <a href="https://drive.google.com/file/d/1Tql_mY4mZQmGf3ahEjuHlIYX6wimF2g7/view?usp=sharing" target="_blank" className="btn-secondary">
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>
                 Download CV
               </a>
